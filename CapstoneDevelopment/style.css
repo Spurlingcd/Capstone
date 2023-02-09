@@ -3,16 +3,28 @@ p {
     padding: 150px;
     margin: 150px;  
     background-color: yellow;
+    
 }
+
+.welmessage {
+    font-family: 'Lobster Two', cursive;
+}
+header{
+
+    width: 100%
+}
+
 
 h1 {
     color:black; 
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    
 }
 * {
     background-image: url("C:\Users\Christina Spurling\Downloads\IMG_0276.HEIC");
-    background-color: #ccc;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
 
 }
 .menu{
@@ -22,9 +34,12 @@ h1 {
 a, .main-nav{
     color: black;
     display: flex;
+    flex-direction: row;
+    font-family: 'Dancing Script', cursive;
 }
 h2{
     color: black;
+    font-family: 'Dancing Script', cursive;
 
 }
  a{
@@ -35,7 +50,7 @@ body {
     padding: 2em;
     align-content: center;
     font-size: xx-large;
-    color: blue;
+    color: black;
     background-color: white;
     
 }
@@ -60,14 +75,60 @@ footer {
     background-color:black;
   }
 
+#menuToggle
+{
+  display: block;
+  position:sticky;
+  top: 120px;
+  left: 50px;
+  
+  z-index: 3;
+  
+  -webkit-user-select:auto;
+  user-select: auto;
+}
 
-/* .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-} */
+#menuToggle a
+{
+  color: black;
+  transition: color 0.4s ease;
+}
+
+#menuToggle a:hover
+{
+  color: yellow;
+}
+
+
+#menuToggle input
+{
+  display:flex;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  top: -9px;
+  left: -7px;
+  
+  cursor:pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+
+  @media (min-width: 550px) {
+    nav > .fa-bars {
+      display: auto;
+      
+    }
+  }
+
+/* in HTML: <ul class="hidden--mobile"> */
+@media (max-width: 550px) {
+    .hidden--mobile {
+      display: none;
+    }
+  }
 
 
   
