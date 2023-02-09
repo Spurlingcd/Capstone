@@ -1,0 +1,73 @@
+p {
+    border: 5px solid black; 
+    padding: 150px;
+    margin: 150px;  
+    background-color: yellow;
+}
+
+h1 {
+    color:black; 
+}
+* {
+    background-image: url("C:\Users\Christina Spurling\Downloads\IMG_0276.HEIC");
+    background-color: #ccc;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+a, .main-nav{
+    color: black;
+    display: flex;
+}
+h2{
+    color: black;
+
+}
+ a{
+    color: blue;
+ }
+
+body {
+    padding: 2em;
+    align-content: center;
+    font-size: xx-large;
+    color: blue;
+    background-color: white;
+    
+}
+
+form {
+    border: 6px dotted black;
+}
+
+
+.main-nav {
+    display: flex;
+}
+.push{
+    margin-left: auto;
+}
+
+.title{
+    text-align: center;
+}
+footer {
+    padding: 1px;
+    background-color:black;
+  }
+
+
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
+
+
+  
