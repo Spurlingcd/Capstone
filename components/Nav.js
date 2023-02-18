@@ -14,7 +14,7 @@ export default links => html`
     </li>
   </div>
   <div class="main-nav">
-    <a class="push">Home</a>
+    <a class="push" href="./home.html">Home</a>
     <a class="push" href="./about.html"><u>About</u></a>
     <a class="push" href="./contactus.html"><u>Contact Us</u></a>
     ${links
