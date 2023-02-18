@@ -18,12 +18,12 @@ export default links => html`
     <a class="push" href="./about.html"><u>About</u></a>
     <a class="push" href="./contactus.html"><u>Contact Us</u></a>
     ${links
-        .map(
-          link =>
-            `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
-        )
-        .join("")}
+      .map(
+        link =>
+          `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
+      )
+      .join("")}
   </div>
 
 </nav>
-<hr>
+`;
