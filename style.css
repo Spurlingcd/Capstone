@@ -23,11 +23,12 @@ p {
 ul, li{
   list-style-type: none;
 }
- /* #logo > img {
-  /* display: flex; see google photos froggy to align this properly
- } */ */
+  #logo > img {
+   display: flex;
+   justify-content: center;
+ }
 
-.welmessage, #aboutmssg {
+ .page-content{
     font-family: 'Lobster Two', cursive;
 }
 
@@ -95,7 +96,7 @@ form {
   margin-bottom: 200px;
   padding-bottom: 50px;
   position: absolute;
- 
+
 }
 
 #menuToggle > li
@@ -134,8 +135,8 @@ form {
 .dropdown:hover .dropdown-menu{
   display:block;
 }
- 
-.dropdown-menu:hover 
+
+.dropdown-menu:hover
 {
   display:block;
 }
