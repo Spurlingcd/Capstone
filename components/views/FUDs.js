@@ -2,6 +2,11 @@ import html from "html-literal";
 
 export default () => html`
   <section id="FUDs" class="page-content">
+    <h2>Funnies</h2>
+    <p>
+      There's not much that a good dose of laughter can't fix
+      ${state.scripture.GetTitle} ${state.scripture.title}}
+    </p>
     <div id="moodTracker">
       <fieldset class="mood">
         <legend>How is your mood today?</legend>

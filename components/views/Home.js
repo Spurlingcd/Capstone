@@ -2,9 +2,6 @@ import html from "html-literal";
 
 export default () => html`
   <section id="Home" class="page-content">
-    <h2 class="title">
-      <b><u>Home</u></b>
-    </h2>
     <p>
       In a funk? Have a smile that you can't seem to turn right side up? Welcome
       to Frown Upside Down!! We've all had bad days...weeks...months...but here
