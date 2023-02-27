@@ -2,9 +2,6 @@ import html from "html-literal";
 
 export default () => html`
   <section id="ContactUs" class="page-content">
-    <h2 class="title">
-      <b><u>Contact Us</u></b>
-    </h2>
     <form action="https://formspree.io/f/xwkjlowe" method="POST">
       <label for="name">Name:</label>
       <input

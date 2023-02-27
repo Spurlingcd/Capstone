@@ -2,9 +2,6 @@ import html from "html-literal";
 
 export default () => html`
   <section id="about" class="page-content">
-    <h2 class="title">
-      <b><u>About</u></b>
-    </h2>
     <p>
       Here at Frown Upside Down, we've learned not to take ourselves to
       seriously. It came with some bumps and bruises along the way though. Our
