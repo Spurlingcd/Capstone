@@ -1,5 +1,4 @@
 export default {
   header: "FUDs Page",
-  view: "FUDs",
-  scripture: {}
+  view: "FUDs"
 };
