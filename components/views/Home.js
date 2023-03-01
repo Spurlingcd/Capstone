@@ -16,6 +16,7 @@ export default () => html`
       for you using our mood tracker.
       <b>HAPPY TRAVELS!!</b>
     </p>
+    <p>Let's have a laugh ${state.body.setup} ${state.body.punchline}</p>
 
     <div id="moodTracker">
       <fieldset class="mood">
