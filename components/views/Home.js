@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <section id="Home" class="page-content">
     <p>
       In a funk? Have a smile that you can't seem to turn right side up? Welcome
@@ -30,6 +30,15 @@ export default () => html`
           ><input type="radio" value="fud" name="tracker" /> Frown Upside Down
         </label>
       </fieldset>
+    </div>
+    <div>
+      <p>
+        <strong>
+          The current weather in ${state.weather.city} is
+          ${state.weather.description}. The temp is ${state.weather.temp}
+          degrees and feels like ${state.weather.feelsLike}.
+        </strong>
+      </p>
     </div>
   </section>
 `;

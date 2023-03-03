@@ -8,6 +8,8 @@ export default state => html`
         <img src="/FUDlogo.jpg" height="90" width="90" />
       </h1>
     </div>
-    <h1>${state.header}</h1>
+    <div id="pageName">
+      <h1>${state.header}</h1>
+    </div>
   </header>
 `;
