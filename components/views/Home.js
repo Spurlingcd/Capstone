@@ -16,11 +16,6 @@ export default state => html`
       for you using our mood tracker.
       <b>HAPPY TRAVELS!!</b>
     </p>
-    <strong>
-      The current weather in ${state.weather.city} is
-      ${state.weather.description}. The temp is ${state.weather.temp} degrees
-      and feels like ${state.weather.feelsLike}.
-    </strong>
 
     <div id="moodTracker">
       <fieldset class="mood">
@@ -35,6 +30,15 @@ export default state => html`
           ><input type="radio" value="fud" name="tracker" /> Frown Upside Down
         </label>
       </fieldset>
+    </div>
+    <div>
+      <p>
+        <strong>
+          The current weather in ${state.weather.city} is
+          ${state.weather.description}. The temp is ${state.weather.temp}
+          degrees and feels like ${state.weather.feelsLike}.
+        </strong>
+      </p>
     </div>
   </section>
 `;

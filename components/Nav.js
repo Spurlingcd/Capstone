@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default links => html`
-<nav role="navigation">
+<nav id="navigation">
   <div class="dropdown-menu">
     <li class="dropdown"><a href="#">Menu</a></li>
     <ul class="submenu">
