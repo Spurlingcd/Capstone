@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <section id="Home" class="page-content">
     <p>
       In a funk? Have a smile that you can't seem to turn right side up? Welcome
@@ -16,7 +16,11 @@ export default () => html`
       for you using our mood tracker.
       <b>HAPPY TRAVELS!!</b>
     </p>
-    <p>Let's have a laugh ${state.body.setup} ${state.body.punchline}</p>
+    <strong>
+      The current weather in ${state.weather.city} is
+      ${state.weather.description}. The temp is ${state.weather.temp} degrees
+      and feels like ${state.weather.feelsLike}.
+    </strong>
 
     <div id="moodTracker">
       <fieldset class="mood">
