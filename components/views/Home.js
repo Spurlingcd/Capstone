@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default state => html`
-  <section id="Home" class="page-content">
+  <section id="home" class="page-content">
     <p>
       In a funk? Have a smile that you can't seem to turn right side up? Welcome
       to Frown Upside Down!! We've all had bad days...weeks...months...but here
@@ -17,7 +17,7 @@ export default state => html`
       <b>HAPPY TRAVELS!!</b>
     </p>
 
-    <div id="moodTracker">
+    <!-- <div id="moodTracker">
       <fieldset class="mood">
         <legend>How is your mood today?</legend>
         <label
@@ -30,7 +30,7 @@ export default state => html`
           ><input type="radio" value="fud" name="tracker" /> Frown Upside Down
         </label>
       </fieldset>
-    </div>
+    </div> -->
     <div>
       <p>
         <strong>

@@ -10,7 +10,7 @@ export default state => html`
       </h1>
     </div>
     <div id="pageName">
-      <h1>${state.header}</h1>
+      <h3>${state.header}</h3>
     </div>
   </header>
 `;
