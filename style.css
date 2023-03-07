@@ -1,10 +1,10 @@
-h1 #businessName {
-  border: 1px solid black;
-}
+
 #logo > img {
   display: flex;
   justify-content: center;
 }
+
+
 
 nav {
   display: flex;
@@ -24,6 +24,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none;
 }
 
 .page-content{
@@ -49,75 +50,51 @@ body {
   background-color: white;
 
 }
-#menuToggle > li
-{
-  color: black;
-  transition: color 0.4s ease;
-}
 
 
-.dropdown-menu a:hover
-{
-  color: yellow;
-}
 .main-nav a:hover {
   color: yellow;
 
 }
-
-/* #menuToggle > ul
-{
-  font-family: 'Dancing Script', cursive;
-  width: 200px;
-  height: 100px;
-  margin-top: 80px;
-  margin-left: 10px;
-  margin-bottom: 200px;
-  padding-bottom: 50px;
-  position: absolute;
-
-} */
-
-
-
-#menuToggle input
-{
-  cursor:pointer;
-  opacity: 0;
+nav > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 0;
 }
-
-.dropdown {
-  display: block;
-  position: absolute;
-}
-
-.dropdown-content{
-  min-width: max-content;
-  overflow: hidden;
-  transition: max-height 5s;
-}
-
-.dropdown:hover .dropdown-menu{
-  display:block;
-}
-
-.dropdown-menu:hover
-{
-  display:block;
-}
-
-.dropdown-menu {
+.hidden-mobile  {
   display:none;
 
 }
-.dropdown-content > ul {
-list-style-type: none;
-padding: 0px 20px
+nav > .fa-bars {
+  display: none;
 }
+form {
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+}
+
+form > input[type="submit"] {
+  width: 40%;
+  margin: 0.5rem;
+  margin-right: auto;
+}
+
+
+.dropdown-content:hover .hidden-mobile{
+  display:flex;
+}
+.hidden-mobile:hover
+{
+  display:flex;
+}
+
 
 footer {
   padding: 1px;
-  background-color:black;
+
 }
 
 
