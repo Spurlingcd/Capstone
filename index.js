@@ -4,7 +4,6 @@ import Navigo from "navigo";
 import { capitalize } from "lodash";
 import axios from "axios";
 
-
 const router = new Navigo("/");
 
 function render(state = store.Home) {
@@ -14,11 +13,11 @@ function render(state = store.Home) {
       ${Main(state)}
       ${Footer()}
     `;
-  afterRender();
+  afterRender(state);
   router.updatePageLinks();
 }
 
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
@@ -30,7 +29,8 @@ router.hooks({
     const view =
       params && params.data && params.data.view
         ? capitalize(params.data.view)
-        : "Home"; // Add a switch case statement to handle multiple routes
+        : "Home";
+
     // Add a switch case statement to handle multiple routes
     switch (view) {
       case "Home":
@@ -66,6 +66,8 @@ router.hooks({
             done();
           });
         break;
+      default:
+        done();
     }
   },
   already: params => {
