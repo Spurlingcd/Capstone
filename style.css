@@ -103,7 +103,13 @@ nav > ul > li {
 nav > .fa-bars {
   display: none;
 }
-
+form {
+  border: solid 1px black;
+  display:flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50%;
+}
 
 .dropdown-content:hover .hidden-mobile{
   display:flex;
