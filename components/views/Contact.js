@@ -29,7 +29,7 @@ export default () => html`
         <textarea
           name="msg"
           id="msg"
-          cols="150"
+          cols="60"
           rows="30"
           placeholder=" What's this message about?"
         ></textarea>
