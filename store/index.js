@@ -1,5 +1,5 @@
 export { default as Home } from "./Home";
 export { default as About } from "./About";
-export { default as FUDs } from "./FUDs";
+export { default as Fuds } from "./Fuds";
 export { default as Contact } from "./Contact";
 export { default as Links } from "./Links";
