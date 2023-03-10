@@ -6,6 +6,7 @@
 
 
 
+
 nav {
   display: flex;
   flex-direction: column;
@@ -32,6 +33,13 @@ nav {
   padding: 50px;
   margin: 75px 100px 100px 150px;
   background-color: rgba(255, 255, 0, 0.685);
+}
+.content{
+  border: 10px double black;
+  padding: 50px;
+  margin: 75px 100px 100px 150px;
+  background-color: rgba(255, 255, 0, 0.685)
+
 }
 ul, li{
   list-style-type: none;

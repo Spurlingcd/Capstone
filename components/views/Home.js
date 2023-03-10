@@ -18,7 +18,7 @@ export default state => html`
     </p>
 
     <div>
-      <p>
+      <p class="content">
         <strong>
           The current weather in ${state.weather.city} is
           ${state.weather.description}. The temp is ${state.weather.temp}
