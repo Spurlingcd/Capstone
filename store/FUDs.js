@@ -1,4 +1,4 @@
 export default {
-  header: "Fuds Page",
+  header: "Fuds page",
   view: "Fuds"
 };
