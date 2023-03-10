@@ -1,5 +1,5 @@
 import html from "html-literal";
-import myLogo from "/assets/images/FUDlogo.jpg";
+import myLogo from "/assets/images/FUDslogo.jpg";
 
 export default state => html`
   <header>
