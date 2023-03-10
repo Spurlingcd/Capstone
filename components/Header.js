@@ -1,6 +1,5 @@
 import html from "html-literal";
-import myLogo from "/assets/images/FUDslogo.jpg";
-
+import myLogo from "/assets/images/Fudslogo.jpg";
 export default state => html`
   <header>
     <div id="brandAttributes">
