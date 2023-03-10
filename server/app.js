@@ -1,4 +1,24 @@
 const express = require("express");
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+const funnie = require("./routers/funnie");
+const affirmation = require("./routers/affirmation");
+const scripture = require("./routers/scripture");
+
+dotenv.config();
+
+const PORT = process.env.PORT || 4040; // we use || to provide a default value
+
+mongoose.connect(process.env.MONGODB); //PULLS IN DRIVER TWO PIECES OF SOFTWARE TALKING
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "Connection Error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
+
+// Initialize the Express application
 const app = express();
 
 const logging = (request, response, next) => {
@@ -54,5 +74,9 @@ app.post("/add", (request, response) => {
   response.json(responseBody);
 });
 
+app.use("/funnies", funnie);
+app.use("/affirmations", affirmation);
+app.use("/scriptures", scripture);
+
 // Request handlers go here
-app.listen(4040, () => console.log("Listening on port 4040"));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
