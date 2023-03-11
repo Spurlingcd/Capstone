@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default state => html`
   <section id="home" class="page-content">
-    <p>
+    <p class="content">
       In a funk? Have a smile that you can't seem to turn right side up? Welcome
       to Frown Upside Down!! We've all had bad days...weeks...months...but here
       at Frown Upside Down, we'll try and give you a hand, as best we can...for
@@ -19,11 +19,9 @@ export default state => html`
 
     <div>
       <p class="content">
-        <strong>
-          The current weather in ${state.weather.city} is
-          ${state.weather.description}. The temp is ${state.weather.temp}
-          degrees and feels like ${state.weather.feelsLike}.
-        </strong>
+        The current weather in ${state.weather.city} is
+        ${state.weather.description}. The temp is ${state.weather.temp} degrees
+        and feels like ${state.weather.feelsLike}.
       </p>
     </div>
   </section>

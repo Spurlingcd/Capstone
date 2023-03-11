@@ -6,19 +6,20 @@
 
 
 
-
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content:flex-start;
+  border-bottom: 2px double black;
+
 
 }
 
 .main-nav{
   display:flex;
   flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 #pageName {
@@ -28,32 +29,41 @@ nav {
   border: none;
 }
 
+header {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 .page-content{
   border: 10px double black;
-  padding: 50px;
-  margin: 75px 100px 100px 150px;
+  padding: 20px;
+  margin: 75px 100px 100px 200px;
   background-color: rgba(255, 255, 0, 0.685);
+  /* font-family: 'Lobster', cursive; */
 }
 .content{
   border: 10px double black;
   padding: 50px;
-  margin: 75px 100px 100px 150px;
-  background-color: rgba(255, 255, 0, 0.685)
-
+  margin: 75px 100px 100px 100px;
+  background-color: white;
+  font-family: 'Lobster', cursive;
+  color: black;
 }
 ul, li{
   list-style-type: none;
 }
 
-*{
-  color:black;
+nav, header, footer{
   font-family: 'Dancing Script', cursive;
-
+  color:black;
+  font-size: xx-large;
 }
 body {
   padding: 2em;
   align-content: center;
-  font-size: xx-large;
+  font-size: larger;
   color: black;
   background-color: white;
 
@@ -129,7 +139,7 @@ form {
 
 
 footer {
-  padding: 1px;
+  padding: 50px;
 
 }
 
