@@ -16,6 +16,12 @@ router.get("/", (request, response) => {
     return response.json(record);
   });
 });
+router.get("/:id", (request, response) => {
+  Affirmation.findById(request.params.id, (error, record) => {
+    if (error) return response.status(500).json(error);
+    return response.json(record);
+  });
+});
 router.delete("/:id", (request, response) => {
   Affirmation.findByIdAndRemove(request.params.id, {}, (error, record) => {
     if (error) return response.status(500).json(error);
