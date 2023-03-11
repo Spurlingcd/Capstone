@@ -66,6 +66,43 @@ router.hooks({
             done();
           });
         break;
+
+      case "Affirmation":
+        axios
+          .get(`${process.env.FUDS_API}/Affirmation`)
+          .then(response => {
+            store.Affirmation.affirmations = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
+            done();
+          });
+        break;
+      case "Funnie":
+        axios
+          .get(`${process.env.FUDS_API}/Funnie`)
+          .then(response => {
+            store.Funnie.funnies = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
+            done();
+          });
+        break;
+      case "Scripture":
+        axios
+          .get(`${process.env.FUDS_API}/Scripture`)
+          .then(response => {
+            store.Scripture.scriptures = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
+            done();
+          });
+        break;
       default:
         done();
     }
