@@ -16,4 +16,30 @@ router.get("/", (request, response) => {
     return response.json(record);
   });
 });
+router.delete("/:id", (request, response) => {
+  Affirmation.findByIdAndRemove(request.params.id, {}, (error, record) => {
+    if (error) return response.status(500).json(error);
+    return response.json(record);
+  });
+});
+router.put("/:id", (request, response) => {
+  const body = request.body;
+  Affirmation.findByIdAndUpdate(
+    request.params.id,
+    {
+      $set: {
+        quote: body.quote
+      }
+    },
+    {
+      new: true,
+      upsert: true
+    },
+    (error, record) => {
+      if (error) return response.status(500).json(error);
+      return response.json(record);
+    }
+  );
+});
+
 module.exports = router;

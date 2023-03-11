@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const scriptSchema = new mongoose.Schema({
-  Reference: {
+  reference: {
     type: String,
     required: true
   },
-  Verse: {
+  verse: {
     type: String,
     required: true
   }
