@@ -67,11 +67,12 @@ router.hooks({
           });
         break;
 
-      case "Affirmation":
+      case "Fuds":
         axios
-          .get(`${process.env.FUDS_API}/Affirmation`)
+          .get("http://localhost:4040/Affirmations")
           .then(response => {
             store.Affirmation.affirmations = response.data;
+            console.log(response.data);
             done();
           })
           .catch(error => {
@@ -79,9 +80,9 @@ router.hooks({
             done();
           });
         break;
-      case "Funnie":
+      case "Fuds":
         axios
-          .get(`${process.env.FUDS_API}/Funnie`)
+          .get("http://localhost:4040/Funnies")
           .then(response => {
             store.Funnie.funnies = response.data;
             done();
@@ -91,9 +92,9 @@ router.hooks({
             done();
           });
         break;
-      case "Scripture":
+      case "Fuds":
         axios
-          .get(`${process.env.FUDS_API}/Scripture`)
+          .get("http://localhost:4040/Scriptures")
           .then(response => {
             store.Scripture.scriptures = response.data;
             done();
