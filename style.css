@@ -2,6 +2,10 @@
 #logo > img {
   display: flex;
   justify-content: center;
+  float: left;
+  width: 25%;
+  height: auto;
+  margin-right: 1rem;
 }
 
 
@@ -79,6 +83,7 @@ body {
   .hidden--mobile {
     display: none !important;
   }
+}
 
 nav{
 display: flex;
@@ -109,6 +114,7 @@ nav > ul > li {
     justify-content: space-evenly;
     padding: 0 0;
   }
+}
 
 
 nav > ul > li {
@@ -125,8 +131,15 @@ form {
   border: solid 1px black;
   display:flex;
   flex-direction: row;
-  width: 50%;
+  margin: 1rem 1rem;
+  width: 30%;
   height: 50%;
+}
+
+form > input[type="submit"] {
+  width: 30%;
+  margin: 0.5rem;
+  margin-right: auto;
 }
 
 .dropdown-content:hover .hidden-mobile{

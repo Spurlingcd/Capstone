@@ -69,7 +69,7 @@ router.hooks({
 
       case "Fuds":
         axios
-          .get("https://fuds-api.onrender.com/affirmations")
+          .get("")
           .then(response => {
             store.Affirmation.affirmations = response.data;
             console.log(response.data);
