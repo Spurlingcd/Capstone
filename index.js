@@ -69,7 +69,7 @@ router.hooks({
 
       case "Fuds":
         axios
-          .get("http://localhost:4040/Affirmations")
+          .get("https://fuds-api.onrender.com/affirmations")
           .then(response => {
             store.Affirmation.affirmations = response.data;
             console.log(response.data);
@@ -82,7 +82,7 @@ router.hooks({
         break;
       case "Fuds":
         axios
-          .get("http://localhost:4040/Funnies")
+          .get("https://fuds-api.onrender.com/funnies")
           .then(response => {
             store.Funnie.funnies = response.data;
             done();
@@ -94,7 +94,7 @@ router.hooks({
         break;
       case "Fuds":
         axios
-          .get("http://localhost:4040/Scriptures")
+          .get("https://fuds-api.onrender.com/scriptures")
           .then(response => {
             store.Scripture.scriptures = response.data;
             done();
