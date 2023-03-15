@@ -4,17 +4,17 @@ export default state => html`
   <section id="fuds" class="page-content">
     <h2 class="content">
       Affirmations
-      <p>${state.affirmation}</p>
+      <p>${state.affirmationsResponse}</p>
       <button class="affirmations" type="button">Next</button>
     </h2>
     <h2 class="content">
       Funnies
-      <p>${state.funnie}</p>
+      <p>${state.funniesResponse}</p>
       <button class="funnies" type="button">Next</button>
     </h2>
     <h2 class="content">
       Scriptures
-      <p>${state.scripture}</p>
+      <p>${state.scripturesResponse}</p>
       <button class="scripture" type="button">Next</button>
     </h2>
   </section>
