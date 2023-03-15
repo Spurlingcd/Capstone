@@ -5,14 +5,17 @@ export default state => html`
     <h2 class="content">
       Affirmations
       <p>${state.affirmation}</p>
+      <button class="affirmations" type="button">Next</button>
     </h2>
     <h2 class="content">
       Funnies
       <p>${state.funnie}</p>
+      <button class="funnies" type="button">Next</button>
     </h2>
     <h2 class="content">
       Scriptures
       <p>${state.scripture}</p>
+      <button class="scripture" type="button">Next</button>
     </h2>
   </section>
 `;

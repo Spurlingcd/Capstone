@@ -1,9 +1,8 @@
 
-#logo > img {
-  display: flex;
-  justify-content: center;
-}
-
+  #logo:hover {
+    transform:rotate(180deg);
+    transition:5s ease-in-out;
+    }
 
 
 nav {
@@ -33,6 +32,7 @@ header {
   display:flex;
   flex-direction: column;
   align-items: center;
+
 
 }
 
@@ -79,12 +79,13 @@ body {
   .hidden--mobile {
     display: none !important;
   }
+}
 
-nav{
+/* nav{
 display: flex;
 align-items: center;
 flex-direction: column;
-}
+} */
 
 nav > i {
 padding: 1rem;
@@ -109,6 +110,7 @@ nav > ul > li {
     justify-content: space-evenly;
     padding: 0 0;
   }
+}
 
 
 nav > ul > li {
@@ -121,13 +123,20 @@ nav > ul > li {
 nav > .fa-bars {
   display: none;
 }
-form {
+/* form {
   border: solid 1px black;
   display:flex;
   flex-direction: row;
-  width: 50%;
+  margin: 1rem 1rem;
+  width: 30%;
   height: 50%;
 }
+
+form > input[type="submit"] {
+  width: 30%;
+  margin: 0.5rem;
+  margin-right: auto;
+} */
 
 .dropdown-content:hover .hidden-mobile{
   display:flex;
