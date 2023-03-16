@@ -78,9 +78,9 @@ router.hooks({
             funniesResponse,
             scripturesResponse
           ] = responses;
-          store.Affirmation.affirmations = affirmationsResponse.data;
-          store.Funnie.funnies = funniesResponse.data;
-          store.Scripture.scriptures = scripturesResponse.data;
+          store.Fuds.affirmation = affirmationsResponse.data;
+          store.Fuds.funnie = funniesResponse.data;
+          store.Fuds.scripture = scripturesResponse.data;
           done();
         });
       // axios
