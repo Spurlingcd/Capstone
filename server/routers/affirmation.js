@@ -11,10 +11,24 @@ router.post("/", (request, response) => {
   });
 });
 router.get("/", (request, response) => {
-  Affirmation.find({}, (error, record) => {
-    if (error) return response.status(500).json(error);
-    return response.json(record);
-  });
+  if (request.query.random) {
+    Affirmation.aggregate([
+      {
+        $sample: { size: 1 }
+      }
+    ])
+      .then(record => {
+        response.json(record[0]);
+      })
+      .catch(error => {
+        response.status(500).json(error);
+      });
+  } else {
+    Affirmation.find({}, (error, record) => {
+      if (error) return response.status(500).json(error);
+      return response.json(record);
+    });
+  }
 });
 router.get("/:id", (request, response) => {
   Affirmation.findById(request.params.id, (error, record) => {
