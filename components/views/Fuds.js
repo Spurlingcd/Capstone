@@ -3,7 +3,7 @@ import html from "html-literal";
 export default state => {
   console.log(state);
   return html`
-  <section id="fuds" class="page-content">
+  // <section id="fuds" class="page-content">
     <table id="affirmations" class="content">
         <tr>
           <th>Affirmations</th>
@@ -29,6 +29,6 @@ export default state => {
         <td>${state.scripture}</td>
       </tr>
     </table>
-  </section>
+  // </section>
 `;
 };
