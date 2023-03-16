@@ -33,5 +33,6 @@ export default state => {
       </tr>
     </table>
   // </section>
+  <button onclick="window.location.reload()" >Next</button>
 `;
 };

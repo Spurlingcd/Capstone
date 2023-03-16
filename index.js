@@ -73,15 +73,15 @@ router.hooks({
           axios.get("https://fuds-api.onrender.com/funnies?random=1"),
           axios.get("https://fuds-api.onrender.com/scriptures?random=1")
         ]).then(responses => {
+          console.log(responses);
           const [
             affirmationsResponse,
             funniesResponse,
             scripturesResponse
           ] = responses;
-          responses = {};
-          store.Fuds.affirmation = affirmationsResponse.data;
-          store.Fuds.funnie = funniesResponse.data;
-          store.Fuds.scripture = scripturesResponse.data;
+          store.Fuds.affirmation = affirmationsResponse.value.data;
+          store.Fuds.funnie = funniesResponse.value.data;
+          store.Fuds.scripture = scripturesResponse.value.data;
           done();
         });
         break;
