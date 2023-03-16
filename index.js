@@ -78,50 +78,50 @@ router.hooks({
             funniesResponse,
             scripturesResponse
           ] = responses;
+          responses = {};
           store.Fuds.affirmation = affirmationsResponse.data;
           store.Fuds.funnie = funniesResponse.data;
           store.Fuds.scripture = scripturesResponse.data;
           done();
         });
-      // axios
-      //   .get("https://fuds-api.onrender.com/affirmations")
-      //   .then(response => {
-      //     store.Affirmation.affirmations = response.data;
-      //     console.log(response.data);
-      //     done();
-      //   })
-      //   .catch(error => {
-      //     console.log("It puked", error);
-      //     done();
-      //   });
-      // break;
-      // case "Fuds":
-      //   axios
-      //     .get("https://fuds-api.onrender.com/funnies")
-      //     .then(response => {
-      //       store.Funnie.funnies = response.data;
-      //       done();
-      //     })
-      //     .catch(error => {
-      //       console.log("It puked", error);
-      //       done();
-      //     });
-      //   break;
-      // case "Fuds":
-      //   axios
-      //     .get("https://fuds-api.onrender.com/scriptures")
-      //     .then(response => {
-      //       store.Scripture.scriptures = response.data;
-      //       done();
-      //     })
-      //     .catch(error => {
-      //       console.log("It puked", error);
-      //       done();
-      //     });
-      // // break;
+        break;
       default:
         done();
     }
+    // axios
+    //   .get("https://fuds-api.onrender.com/affirmations")
+    //   .then(response => {
+    //     store.Affirmation.affirmations = response.data;
+    //     console.log(response.data);
+    //     done();
+    //   })
+    //   .catch(error => {
+    //     console.log("It puked", error);
+    //     done();
+    //   });
+    // break;
+    // case "Fuds":
+    //   axios
+    //     .get("https://fuds-api.onrender.com/funnies")
+    //     .then(response => {
+    //       store.Funnie.funnies = response.data;
+    //       done();
+    //     })
+    //     .catch(error => {
+    //       console.log("It puked", error);
+    //       done();
+    //     });
+    //   break;
+    // case "Fuds":
+    //   axios
+    //     .get("https://fuds-api.onrender.com/scriptures")
+    //     .then(response => {
+    //       store.Scripture.scriptures = response.data;
+    //       done();
+    //     })
+    //     .catch(error => {
+    //       console.log("It puked", error);
+    //       done();
   },
   already: params => {
     const view =

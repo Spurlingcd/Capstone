@@ -1,9 +1,10 @@
 import html from "html-literal";
 
-export default state => html`
+export default state => {
+  console.log(state);
+  return html`
   <section id="fuds" class="page-content">
-    <table class="content" span="2">
-      <thead>
+    <table id="affirmations" class="content">
         <tr>
           <th>Affirmations</th>
         </tr>
@@ -15,14 +16,14 @@ export default state => html`
       </tbody>
     </table>
 
-    <table class="content">
+    <table id= "funnies" class="content">
       <tr>
         <th>Funnies</th>
         <td>${state.funnie}</td>
       </tr>
     </table>
 
-    <table class="content">
+    <table id="scriptures" class="content">
       <tr>
         <th>Scriptures</th>
         <td>${state.scripture}</td>
@@ -30,3 +31,4 @@ export default state => html`
     </table>
   </section>
 `;
+};
