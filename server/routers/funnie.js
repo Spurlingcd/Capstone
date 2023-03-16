@@ -12,10 +12,24 @@ router.post("/", (request, response) => {
 });
 
 router.get("/", (request, response) => {
-  Funnie.find({}, (error, record) => {
-    if (error) return response.status(500).json(error);
-    return response.json(record);
-  });
+  if (request.query.random) {
+    Funnie.aggregate([
+      {
+        $sample: { size: 1 }
+      }
+    ])
+      .then(record => {
+        response.json(record[0]);
+      })
+      .catch(error => {
+        response.status(500).json(error);
+      });
+  } else {
+    Funnie.find({}, (error, record) => {
+      if (error) return response.status(500).json(error);
+      return response.json(record);
+    });
+  }
 });
 router.get("/:id", (request, response) => {
   Funnie.findById(request.params.id, (error, record) => {

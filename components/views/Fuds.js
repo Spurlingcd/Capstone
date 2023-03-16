@@ -11,7 +11,7 @@ export default state => {
       </thead>
       <tbody>
         <tr>
-          <td>${state.affirmation}</td>
+          <td>${state.affirmation.quote}</td>
         </tr>
       </tbody>
     </table>
@@ -19,14 +19,17 @@ export default state => {
     <table id= "funnies" class="content">
       <tr>
         <th>Funnies</th>
-        <td>${state.funnie}</td>
+        <td>${state.funnie.setup}</td>
+        <td>${state.funnie.punchline}</td>
       </tr>
     </table>
 
     <table id="scriptures" class="content">
       <tr>
         <th>Scriptures</th>
-        <td>${state.scripture}</td>
+        <td>${state.scripture.reference}</td>
+        <td>${state.scripture.verse}</td>
+
       </tr>
     </table>
   // </section>

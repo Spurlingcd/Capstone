@@ -69,9 +69,9 @@ router.hooks({
 
       case "Fuds":
         Promise.allSettled([
-          axios.get("https://fuds-api.onrender.com/affirmations"),
-          axios.get("https://fuds-api.onrender.com/funnies"),
-          axios.get("https://fuds-api.onrender.com/scriptures")
+          axios.get("https://fuds-api.onrender.com/affirmations?random=1"),
+          axios.get("https://fuds-api.onrender.com/funnies?random=1"),
+          axios.get("https://fuds-api.onrender.com/scriptures?random=1")
         ]).then(responses => {
           const [
             affirmationsResponse,
