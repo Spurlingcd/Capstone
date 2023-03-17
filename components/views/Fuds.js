@@ -3,36 +3,47 @@ import html from "html-literal";
 export default state => {
   console.log(state);
   return html`
-  // <section id="fuds" class="page-content">
-    <table id="affirmations" class="content">
+    //
+    <section id="fuds" class="page-content">
+      <table id="affirmations" class="content">
+        <thead>
+          <tr>
+            <th>Affirmations:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"${state.affirmation.quote}"</td>
+            <td><button onclick="window.location.reload()">Next</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table id="funnies" class="content">
+        <thead>
+          <tr>
+            <th>Funnies:</th>
+          </tr>
+        </thead>
         <tr>
-          <th>Affirmations</th>
+          <th>Setup</th>
+          <td>${state.funnie.setup}</td>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td>${state.affirmation.quote}</td>
+          <th>Punchline</th>
+          <td>${state.funnie.punchline}</td>
+          <td><button onclick="window.location.reload()">Next</button></td>
         </tr>
-      </tbody>
-    </table>
+      </table>
 
-    <table id= "funnies" class="content">
-      <tr>
-        <th>Funnies</th>
-        <td>${state.funnie.setup}</td>
-        <td>${state.funnie.punchline}</td>
-      </tr>
-    </table>
-
-    <table id="scriptures" class="content">
-      <tr>
-        <th>Scriptures</th>
-        <td>${state.scripture.reference}</td>
-        <td>${state.scripture.verse}</td>
-
-      </tr>
-    </table>
-  // </section>
-  <button onclick="window.location.reload()" >Next</button>
-`;
+      <table id="scriptures" class="content">
+        <tr>
+          <th>Scriptures:</th>
+          <td>${state.scripture.reference}</td>
+          <td>"${state.scripture.verse}"</td>
+          <td><button onclick="window.location.reload()">Next</button></td>
+        </tr>
+      </table>
+    </section>
+  `;
 };
