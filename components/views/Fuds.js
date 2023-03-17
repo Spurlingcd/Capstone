@@ -14,7 +14,11 @@ export default state => {
         <tbody>
           <tr>
             <td>"${state.affirmation.quote}"</td>
-            <td><button onclick="window.location.reload()">Next</button></td>
+            <td>
+              <button id="affirmation-button" onclick="window.location.reload">
+                Next
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -32,7 +36,11 @@ export default state => {
         <tr>
           <th>Punchline</th>
           <td>${state.funnie.punchline}</td>
-          <td><button onclick="window.location.reload()">Next</button></td>
+          <td>
+            <button id="funnies-button" onclick="window.location.reload">
+              Next
+            </button>
+          </td>
         </tr>
       </table>
 
@@ -41,7 +49,11 @@ export default state => {
           <th>Scriptures:</th>
           <td>${state.scripture.reference}</td>
           <td>"${state.scripture.verse}"</td>
-          <td><button onclick="window.location.reload()">Next</button></td>
+          <td>
+            <button id="scripture-button" onclick="window.location.reload" ;>
+              Next
+            </button>
+          </td>
         </tr>
       </table>
     </section>

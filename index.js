@@ -22,6 +22,14 @@ function afterRender() {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  const handleClick = () => {
+    location.reload();
+  };
+  const button = document.getElementById("fuds");
+  button.addEventListener("click", handleClick);
+
+  const targetElement = document.getElementById("fuds");
+  targetElement.scrollIntoView({ behavior: "smooth" });
 }
 
 router.hooks({
@@ -88,40 +96,6 @@ router.hooks({
       default:
         done();
     }
-    // axios
-    //   .get("https://fuds-api.onrender.com/affirmations")
-    //   .then(response => {
-    //     store.Affirmation.affirmations = response.data;
-    //     console.log(response.data);
-    //     done();
-    //   })
-    //   .catch(error => {
-    //     console.log("It puked", error);
-    //     done();
-    //   });
-    // break;
-    // case "Fuds":
-    //   axios
-    //     .get("https://fuds-api.onrender.com/funnies")
-    //     .then(response => {
-    //       store.Funnie.funnies = response.data;
-    //       done();
-    //     })
-    //     .catch(error => {
-    //       console.log("It puked", error);
-    //       done();
-    //     });
-    //   break;
-    // case "Fuds":
-    //   axios
-    //     .get("https://fuds-api.onrender.com/scriptures")
-    //     .then(response => {
-    //       store.Scripture.scriptures = response.data;
-    //       done();
-    //     })
-    //     .catch(error => {
-    //       console.log("It puked", error);
-    //       done();
   },
   already: params => {
     const view =
