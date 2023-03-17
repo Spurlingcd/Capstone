@@ -2,9 +2,14 @@ import html from "html-literal";
 
 export default () => html`
   <section id="contact" class="page-content">
-    <form action="https://formspree.io/f/xwkjlowe" method="POST">
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/xwkjlowe"
+      method="POST"
+      window.location.href="http://localhost:1234"
+    >
       <div>
-        <label for="name">Name:</label>
+        <label for="name" required>Name:</label>
         <input
           type="text"
           name="name"
@@ -14,7 +19,7 @@ export default () => html`
         />
       </div>
       <div>
-        <label for="email">Email:</label>
+        <label for="email" required>Email:</label>
         <input
           type="email"
           name="email"
@@ -29,7 +34,7 @@ export default () => html`
       </div>
 
       <div>
-        <label for="msg">Enter your message:</label>
+        <label for="msg" required>Enter your message:</label>
         <div>
           <textarea
             name="msg"

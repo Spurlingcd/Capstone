@@ -30,7 +30,7 @@ export default () => html`
             value="fud"
             name="tracker"
           />
-          Frown Upside Down
+          Need a Quick Pick Me Up
         </label>
       </fieldset>
     </div>
