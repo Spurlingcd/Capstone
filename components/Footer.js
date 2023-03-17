@@ -6,13 +6,31 @@ export default () => html`
       <fieldset class="mood">
         <legend>How is your mood today?</legend>
         <label
-          ><input type="radio" value="frown" name="tracker" /> Not So Good
+          ><input
+            type="radio"
+            value="frown"
+            name="tracker"
+            onclick="window.location='/fuds'"
+          />
+          Not So Good
         </label>
         <label
-          ><input type="radio" value="meh" name="tracker" /> Just... Meh
+          ><input
+            type="radio"
+            onclick="window.location='/fuds'"
+            value="meh"
+            name="tracker"
+          />
+          Just... Meh
         </label>
         <label
-          ><input type="radio" value="fud" name="tracker" /> Frown Upside Down
+          ><input
+            type="radio"
+            onclick="window.location='/fuds'"
+            value="fud"
+            name="tracker"
+          />
+          Frown Upside Down
         </label>
       </fieldset>
     </div>

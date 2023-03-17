@@ -13,7 +13,9 @@ nav {
 
 
 }
-
+table {
+  columns: 5;
+}
 .main-nav{
   display:flex;
   flex-direction: row;
@@ -102,6 +104,7 @@ nav > ul {
 nav > ul > li {
   padding: 0.5rem;
   list-style-type: none;
+
 }
 
 @media (min-width: 550px) {
@@ -146,6 +149,9 @@ form > input[type="submit"] {
   display:flex;
 }
 
+a:visited {
+  color: rgb(33, 39, 119);
+}
 
 footer {
   padding: 50px;
