@@ -5,7 +5,7 @@ export default () => html`
     <form
       cols="70"
       id="contact-form"
-      action="https://formspree.io/f/xwkjlowe"
+      action="https://"
       method="POST"
       window.location.href="http://localhost:1234"
     >
