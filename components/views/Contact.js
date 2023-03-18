@@ -3,6 +3,7 @@ import html from "html-literal";
 export default () => html`
   <section id="contact" class="page-content">
     <form
+      cols="70"
       id="contact-form"
       action="https://formspree.io/f/xwkjlowe"
       method="POST"
@@ -39,7 +40,7 @@ export default () => html`
           <textarea
             name="msg"
             id="msg"
-            cols="50"
+            cols="40"
             rows="3"
             placeholder=" What's this message about?"
           ></textarea>
