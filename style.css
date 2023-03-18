@@ -13,9 +13,7 @@ nav {
 
 
 }
-table {
-  columns: 5;
-}
+
 .main-nav{
   display:flex;
   flex-direction: row;
@@ -39,6 +37,8 @@ header {
 }
 
 .page-content{
+  display: flex;
+  flex-direction: row;
   border: 10px double black;
   padding: 20px;
   margin: 75px 100px 100px 200px;
@@ -46,6 +46,8 @@ header {
   /* font-family: 'Lobster', cursive; */
 }
 .content{
+  display: flex;
+  flex-direction: row;
   border: 10px double black;
   padding: 50px;
   margin: 75px 100px 100px 100px;
@@ -76,36 +78,65 @@ body {
   color: yellow;
 
 }
-
-@media (max-width: 7px){
+@media (max-width: 549px){
   .hidden--mobile {
     display: none !important;
   }
-}
 
-nav > i {
-padding: 1rem;
-font-size: 2em;
-}
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-nav > ul {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 0;
-}
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
 
-nav > ul > li {
-  padding: 0.5rem;
-  list-style-type: none;
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
 
-}
-.main-nav{
-  cursor:pointer;
-  font-size: 24px;
-}
-.hidden-mobile{
-  display: none;
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+  label{
+    width: 100%;
+  }
+
+  .page-content {
+    position:sticky;
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  p {
+    display: inline-block;
+    float: left;
+    margin-left: 0px;
+    width: 50%;
+  }
+  #msg {
+    width: 80%;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 50%
+  }
+
+  img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
+  }
 }
 
 @media (min-width: 550px) {
@@ -114,31 +145,27 @@ nav > ul > li {
     justify-content: space-evenly;
     padding: 0 0;
   }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+
+
+  img {
+     width: 25%;
+    height: auto;
+    margin-right: 1rem;
+  }
 }
 
 
-nav > ul > li {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid;
-  padding: 0.5rem 0.5rem;
-  border-radius: 25px;
-}
-nav > .fa-bars {
-  display: none;
-}
-
-.dropdown-content:hover .hidden-mobile{
-  display:flex;
-}
-.hidden-mobile:hover
-{
-  display:flex;
-}
-
-a:visited {
-  color: rgb(33, 39, 119);
-}
 
 footer {
   padding: 50px;
