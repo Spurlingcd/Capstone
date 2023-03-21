@@ -22,7 +22,7 @@ function afterRender() {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
   const handleClick = () => {
-    window.location.reload;
+    location.reload();
   };
 
   const button = document.getElementById("fuds");
