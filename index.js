@@ -18,13 +18,13 @@ function render(state = store.Home) {
 }
 
 function afterRender() {
-  // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
   const handleClick = () => {
     window.location.reload;
   };
+
   const button = document.getElementById("fuds");
   button.addEventListener("click", handleClick);
 
@@ -32,6 +32,7 @@ function afterRender() {
   targetElement.scrollIntoView({ behavior: "smooth" });
 
   const form = document.querySelector("form");
+
   form.addEventListener("submit", event => {
     event.preventDefault();
     alert("The form was submitted!");
