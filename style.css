@@ -16,6 +16,18 @@
       user-select: none;
     }
 
+    .next-button{
+      position: static;
+      background-color: black;
+      color: white ;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px 2px rgb(104, 31, 31);
+      padding:10px;
+      margin-left: 200px;
+      width: 30%;
+       }
+
 nav {
   display: flex;
   flex-direction: column;
@@ -80,6 +92,9 @@ body {
   .hidden--mobile {
     display: none !important;
   }
+  header {
+    width: 50%;
+  }
 
   nav {
     display: flex;
@@ -116,6 +131,24 @@ body {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+  }
+  .content {
+    float: left;
+    width: 80%;
+    overflow-wrap: normal;
+  }
+  #scriptures {
+    float: left;
+    width:  100%;
+    overflow-wrap: normal;
+    text-size-adjust: 25%;
+
+  }
+  .next-button{
+    position: static;
+    float: left;
+    width: 25%;
+    margin-left: 50px;
   }
 
   #msg {
