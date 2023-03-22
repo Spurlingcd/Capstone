@@ -7,7 +7,7 @@ export default state => {
       <table id="affirmations" class="content">
         <thead>
           <tr>
-            <th>Affirmations:</th>
+            <th><u>Affirmations:</u></th>
           </tr>
         </thead>
         <tbody>
@@ -17,7 +17,7 @@ export default state => {
               <button
                 id="affirmations-button"
                 class="next-button"
-                onclick="window.location='#affirmations'"
+                onclick="location.href='#affirmations'"
               >
                 Next
               </button>
@@ -29,21 +29,21 @@ export default state => {
       <table id="funnies" class="content">
         <thead>
           <tr>
-            <th>Funnies:</th>
+            <th><u>Funnies:</u></th>
           </tr>
         </thead>
         <tr>
-          <th>Setup</th>
+          <th>Setup:</th>
           <td>${state.funnie.setup}</td>
         </tr>
         <tr>
-          <th>Punchline</th>
+          <th>Punchline:</th>
           <td>${state.funnie.punchline}</td>
           <td>
             <button
               id="funnies-button"
               class="next-button"
-              onclick="window.location='#funnies'"
+              onclick="location.href='#funnies'"
             >
               Next
             </button>
@@ -53,17 +53,19 @@ export default state => {
 
       <table id="scriptures" class="content">
         <tr>
-          <th>Scriptures:</th>
+          <th><u>Scriptures:</u></th>
         </tr>
         <tr>
-          <td>${state.scripture.reference}"${state.scripture.verse}"</td>
+          <td>
+            <b>${state.scripture.reference}</b> "${state.scripture.verse}"
+          </td>
         </tr>
         <tr>
           <td>
             <button
               id="scriptures-button"
               class="next-button"
-              onclick="window.location='#scriptures'"
+              onclick="location.href='#scriptures'"
             >
               Next
             </button>

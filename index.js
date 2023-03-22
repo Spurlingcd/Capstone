@@ -27,7 +27,7 @@ function afterRender() {
   const button = document.getElementById("fuds");
   button.addEventListener("click", handleClick);
 
-  const targetElement = document.getElementById("fuds");
+  const targetElement = document.getElementById("affirmations-button");
   targetElement.scrollIntoView({ behavior: "smooth" });
 }
 
@@ -106,7 +106,6 @@ router.hooks({
   }
 });
 
-// needs to be last thing in index.js
 router
   .on({
     "/": () => render(),

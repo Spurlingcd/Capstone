@@ -56,7 +56,7 @@ header {
   flex-direction: column;
   border: 10px double black;
   padding: 20px;
-  margin: 75px 100px 100px 200px;
+  margin: 15px 200px;
   background-color: rgba(255, 255, 0, 0.685);
   /* font-family: 'Lobster', cursive; */
 }
@@ -64,8 +64,8 @@ header {
   display: flex;
   flex-direction: column;
   border: 10px double black;
-  padding: 50px;
-  margin: 75px 100px 100px 100px;
+  padding: 30px;
+  margin: 15px 50px;
   background-color: white;
   font-family: 'Lobster', cursive;
   color: black;
@@ -87,6 +87,13 @@ body {
   background-color: white;
 
 }
+
+ #scriptures, #funnies, #affirmations {
+  margin: 5px 100px;
+  padding: 30px;
+
+}
+
 
 @media (max-width: 549px){
   .hidden--mobile {
