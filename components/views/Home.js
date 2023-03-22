@@ -13,7 +13,7 @@ export default state => html`
       help you now. But you're in luck! We've got something for that too.
       Scripture Verses!! If you can successfully turn your frown upside down
       (with our help of course), let us know what helped you with our contact
-      form on the Contact Us page.
+      form on the Contact page.
       <b>HAPPY TRAVELS!!</b>
     </p>
 
