@@ -24,28 +24,11 @@ function afterRender() {
   const handleClick = () => {
     location.reload();
   };
-
   const button = document.getElementById("fuds");
   button.addEventListener("click", handleClick);
 
   const targetElement = document.getElementById("fuds");
   targetElement.scrollIntoView({ behavior: "smooth" });
-
-  const form = document.querySelector("form");
-
-  form.addEventListener("submit", event => {
-    event.preventDefault();
-    alert("The form was submitted!");
-
-    const inputs = event.target.elements;
-    console.log("form's input elements: ", inputs);
-
-    Array.from(inputs).forEach(input => {
-      console.log(
-        `This input is named ${input.name} and has a value of ${input.value}`
-      );
-    });
-  });
 }
 
 router.hooks({

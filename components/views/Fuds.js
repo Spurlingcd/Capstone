@@ -3,7 +3,6 @@ import html from "html-literal";
 export default state => {
   console.log(state);
   return html`
-    //
     <section id="fuds" class="page-content">
       <table id="affirmations" class="content">
         <thead>
@@ -14,8 +13,14 @@ export default state => {
         <tbody>
           <tr>
             <td>"${state.affirmation.quote}"</td>
+          </tr>
+          <tr>
             <td>
-              <button id="affirmation-button" onclick="window.location.reload">
+              <button
+                id="affirmations-button"
+                class="next-button"
+                onclick="window.location='#affirmations'"
+              >
                 Next
               </button>
             </td>
@@ -37,7 +42,11 @@ export default state => {
           <th>Punchline</th>
           <td>${state.funnie.punchline}</td>
           <td>
-            <button id="funnies-button" onclick="window.location.reload">
+            <button
+              id="funnies-button"
+              class="next-button"
+              onclick="window.location='#funnies'"
+            >
               Next
             </button>
           </td>
@@ -47,10 +56,17 @@ export default state => {
       <table id="scriptures" class="content">
         <tr>
           <th>Scriptures:</th>
-          <td>${state.scripture.reference}</td>
-          <td>"${state.scripture.verse}"</td>
+        </tr>
+        <tr>
+          <td>${state.scripture.reference}"${state.scripture.verse}"</td>
+        </tr>
+        <tr>
           <td>
-            <button id="scripture-button" onclick="window.location.reload" ;>
+            <button
+              id="scriptures-button"
+              class="next-button"
+              onclick="window.location='#scriptures'"
+            >
               Next
             </button>
           </td>
