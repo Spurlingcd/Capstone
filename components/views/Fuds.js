@@ -13,8 +13,6 @@ export default state => {
         <tbody>
           <tr>
             <td>"${state.affirmation.quote}"</td>
-          </tr>
-          <tr>
             <td>
               <button
                 id="affirmations-button"
