@@ -25,4 +25,39 @@ export default state => html`
       </p>
     </div>
   </section>
+
+  <div id="moodTracker">
+    <fieldset class="mood">
+      <legend>How is your mood today?</legend>
+      <label
+        ><input
+          type="radio"
+          value="frown"
+          name="tracker"
+          onclick="window.location.href='/Fuds'"
+        />
+        Not So Good
+      </label>
+
+      <label
+        ><input
+          type="radio"
+          onclick="windows.location.href='/Fuds'"
+          value="meh"
+          name="tracker"
+        />
+        Just... Meh
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          onclick="location.href='/Fuds'"
+          value="fud"
+          name="tracker"
+        />
+        Need a Pick Me Up
+      </label>
+    </fieldset>
+  </div>
 `;

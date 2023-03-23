@@ -2,6 +2,7 @@
   #logo:hover {
     transform:rotate(180deg);
     transition:5s ease-in-out;
+
     }
     nav a {
       color:black;
@@ -201,10 +202,24 @@ body {
   }
 }
 
+#moodTracker {
+  position: static;
+  margin: 30px 200px 100px 270px;
+  color: black;
+
+}
 
 
 footer {
-  padding: 50px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  border-top: 2px solid black;
+  font-size:medium;
+  padding: 20px 200px;
+  margin: 5px 50px 100px 100px ;
+  position: static;
 }
+
 
