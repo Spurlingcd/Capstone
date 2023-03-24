@@ -17,19 +17,20 @@ function render(state = store.Home) {
   router.updatePageLinks();
 }
 
-function afterRender() {
+function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  if (state.view === "Fuds") {
+    const handleClick = () => {
+      location.reload();
+    };
+    const button = document.getElementById("affirmations-button");
+    button.addEventListener("click", handleClick);
 
-  const handleClick = () => {
-    location.reload();
-  };
-  const button = document.getElementById("affirmations-button");
-  button.addEventListener("click", handleClick);
-
-  const targetElement = document.getElementById("affirmations-button");
-  targetElement.scrollIntoView({ behavior: "smooth" });
+    const targetElement = document.getElementById("affirmations-button");
+    targetElement.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 router.hooks({

@@ -1,38 +1,48 @@
+#logo:hover {
+  transform: rotate(180deg);
+  transition: all 3s ease-in-out;
+}
 
-  #logo:hover {
-    transform:rotate(180deg);
-    transition:5s ease-in-out;
+#logo {
+  transition: all 1s ease-in-out;
+}
 
-    }
-    nav a {
-      color:black;
-      transition: color 1s ease;
-    }
 
-    nav a:hover {
-      color: yellow;
+nav a {
+  color: black;
+  transition: color 1s ease;
+}
 
-    }
-    *{
-      user-select: none;
-    }
+nav a:hover {
+  color: yellow;
 
-    .next-button{
-      position: relative;
-      background-color: black;
-      color: white ;
-      border: none;
-      border-radius: 10px;
-      box-shadow: 0px 0px 2px 2px rgb(104, 31, 31);
-      padding:10px;
-      margin-left: 200px;
-      width: 30%;
-       }
+}
+
+* {
+  user-select: none;
+}
+
+.contact {
+  display: grid;
+  width: 50%;
+}
+
+.next-button {
+  position: relative;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(104, 31, 31);
+  padding: 10px;
+  margin-left: 200px;
+  width: 30%;
+}
 
 nav {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+  justify-content: flex-start;
   border-bottom: 2px double black;
 
 
@@ -46,7 +56,7 @@ nav {
 }
 
 header {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -56,20 +66,22 @@ header {
 footer {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   border-top: 2px solid black;
-  font-size:medium;
+  font-size: medium;
   padding: 20px 200px;
-  margin: 5px 50px 100px 100px ;
+  margin: 5px 50px 100px 100px;
   position: static;
 }
+
 #footer {
   border: 2px dotted yellow;
   display: flex;
   font-size: Medium;
 
 }
-.page-content{
+
+.page-content {
   display: flex;
   flex-direction: column;
   border: 10px double black;
@@ -78,7 +90,8 @@ footer {
   background-color: rgba(255, 255, 0, 0.685);
   /* font-family: 'Lobster', cursive; */
 }
-.page-content .content{
+
+.page-content .content {
   display: flex;
   flex-direction: column;
   border: 10px double black;
@@ -88,15 +101,20 @@ footer {
   font-family: 'Lobster', cursive;
   color: black;
 }
-ul, li{
+
+ul,
+li {
   list-style-type: none;
 }
 
-nav, header, footer{
+nav,
+header,
+footer {
   font-family: 'Dancing Script', cursive;
-  color:black;
+  color: black;
   font-size: xx-large;
 }
+
 body {
   padding: 2em;
   align-content: center;
@@ -106,7 +124,8 @@ body {
 
 }
 
- #scriptures, #affirmations {
+#scriptures,
+#affirmations {
   margin: 5px 100px;
   padding: 10px;
 }
@@ -117,10 +136,11 @@ body {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .hidden--mobile {
     display: none !important;
   }
+
   header {
     width: 50%;
   }
@@ -131,49 +151,55 @@ body {
     flex-direction: column;
   }
 
-  nav > i {
+  nav>i {
     padding: 1rem;
     font-size: 2em;
   }
 
-  nav > ul {
+  nav>ul {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 0 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     padding: 0.5rem;
     list-style-type: none;
   }
-  label{
+
+  label {
     width: 100%;
   }
 
   .page-content {
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     position: sticky;
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
   }
+
   .content {
     float: left;
     width: 80%;
     overflow-wrap: normal;
   }
-  #scriptures, #affirmations, #funnies {
+
+  #scriptures,
+  #affirmations,
+  #funnies {
     float: left;
-    width:  100%;
+    width: 100%;
     overflow-wrap: normal;
     text-size-adjust: 25%;
 
   }
-  .next-button{
+
+  .next-button {
     position: absolute;
     float: left;
     width: 25%;
@@ -183,7 +209,8 @@ body {
   #msg {
     width: 80%;
   }
-  footer{
+
+  footer {
     position: static;
     display: flex;
     flex-direction: row;
@@ -193,10 +220,11 @@ body {
     border: none;
 
   }
+
   #footer {
     position: absolute;
     margin: 1px 1px;
-    font-size:xx-small;
+    font-size: xx-small;
     width: 100%;
     border: none;
   }
@@ -210,26 +238,26 @@ body {
 }
 
 @media (min-width: 550px) {
-  nav > ul {
+  nav>ul {
     display: flex;
     justify-content: space-evenly;
     padding: 0 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     text-decoration: none;
     padding: 0.5rem 0.5rem;
 
   }
 
-  nav > .fa-bars {
+  nav>.fa-bars {
     display: none;
   }
 
 
   img {
-     width: 25%;
+    width: 25%;
     height: auto;
     margin-right: 1rem;
   }
@@ -241,8 +269,3 @@ body {
   color: black;
 
 }
-
-
-
-
-
