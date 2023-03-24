@@ -20,16 +20,16 @@ function render(state = store.Home) {
 function afterRender() {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-
-    const handleClick = () => {
-      location.reload();
-    };
-    const button = document.getElementById("affirmations-button");
-    button.addEventListener("click", handleClick);
-
-    const targetElement = document.getElementById("affirmations-button");
-    targetElement.scrollIntoView({ behavior: "smooth" });
   });
+
+  const handleClick = () => {
+    location.reload();
+  };
+  const button = document.getElementById("affirmations-button");
+  button.addEventListener("click", handleClick);
+
+  const targetElement = document.getElementById("affirmations-button");
+  targetElement.scrollIntoView({ behavior: "smooth" });
 }
 
 router.hooks({

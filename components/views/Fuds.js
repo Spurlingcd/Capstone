@@ -14,13 +14,13 @@ export default state => {
           <tr>
             <td>"${state.affirmation.quote}"</td>
             <td>
-              <button
+              <input
+                type="button"
                 id="affirmations-button"
                 class="next-button"
-                onclick="location.href='#affirmations'"
-              >
-                Next
-              </button>
+                onclick="window.location.reload()"
+                value="Next"
+              />
             </td>
           </tr>
         </tbody>
@@ -40,13 +40,13 @@ export default state => {
           <th>Punchline:</th>
           <td>${state.funnie.punchline}</td>
           <td>
-            <button
-              id="funnies-button"
+            <input
+              type="button"
+              id="affirmations-button"
               class="next-button"
-              onclick="location.href='#funnies'"
-            >
-              Next
-            </button>
+              onclick="window.location.reload()"
+              value="Next"
+            />
           </td>
         </tr>
       </table>
@@ -62,13 +62,13 @@ export default state => {
         </tr>
         <tr>
           <td>
-            <button
-              id="scriptures-button"
+            <input
+              type="button"
+              id="affirmations-button"
               class="next-button"
-              onclick="location.href='#scriptures'"
-            >
-              Next
-            </button>
+              onclick="window.location.reload()"
+              value="Next"
+            />
           </td>
         </tr>
       </table>
