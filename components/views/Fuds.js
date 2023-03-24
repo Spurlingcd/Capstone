@@ -13,6 +13,9 @@ export default state => {
         <tbody>
           <tr>
             <td>"${state.affirmation.quote}"</td>
+          </tr>
+
+          <tr>
             <td>
               <input
                 type="button"
@@ -33,12 +36,12 @@ export default state => {
           </tr>
         </thead>
         <tr>
-          <th>Setup:</th>
-          <td>${state.funnie.setup}</td>
+          <td><b>Setup:</b> ${state.funnie.setup}</td>
         </tr>
         <tr>
-          <th>Punchline:</th>
-          <td>${state.funnie.punchline}</td>
+          <td><b>Punchline:</b> ${state.funnie.punchline}</td>
+        </tr>
+        <tr>
           <td>
             <input
               type="button"

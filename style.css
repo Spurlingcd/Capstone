@@ -18,7 +18,7 @@
     }
 
     .next-button{
-      position: static;
+      position: relative;
       background-color: black;
       color: white ;
       border: none;
@@ -52,6 +52,23 @@ header {
 
 }
 
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  border-top: 2px solid black;
+  font-size:medium;
+  padding: 20px 200px;
+  margin: 5px 50px 100px 100px ;
+  position: static;
+}
+#footer {
+  border: 2px dotted yellow;
+  display: flex;
+  font-size: Medium;
+
+}
 .page-content{
   display: flex;
   flex-direction: column;
@@ -89,10 +106,14 @@ body {
 
 }
 
- #scriptures, #funnies, #affirmations {
+ #scriptures, #affirmations {
   margin: 5px 100px;
-  padding: 30px;
+  padding: 10px;
+}
 
+#funnies {
+  margin: 5px 100px;
+  padding: 10px;
 }
 
 
@@ -145,7 +166,7 @@ body {
     width: 80%;
     overflow-wrap: normal;
   }
-  #scriptures {
+  #scriptures, #affirmations, #funnies {
     float: left;
     width:  100%;
     overflow-wrap: normal;
@@ -162,10 +183,22 @@ body {
   #msg {
     width: 80%;
   }
-  footer {
-    position: relative;
+  footer{
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 25%;
+    border: none;
+
+  }
+  #footer {
+    position: absolute;
+    margin: 1px 1px;
+    font-size:xx-small;
     width: 100%;
-    height: 50%
+    border: none;
   }
 
   img {
@@ -211,16 +244,5 @@ body {
 
 
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  border-top: 2px solid black;
-  font-size:medium;
-  padding: 20px 200px;
-  margin: 5px 50px 100px 100px ;
-  position: static;
-}
 
 
