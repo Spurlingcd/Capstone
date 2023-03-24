@@ -42,7 +42,7 @@ export default state => html`
       <label
         ><input
           type="radio"
-          onclick="windows.location.href='/Fuds'"
+          onclick="window.location.href='/Fuds'"
           value="meh"
           name="tracker"
         />
@@ -52,7 +52,7 @@ export default state => html`
       <label>
         <input
           type="radio"
-          onclick="location.href='/Fuds'"
+          onclick="window.location.href='/Fuds'"
           value="fud"
           name="tracker"
         />
