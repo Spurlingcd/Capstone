@@ -9,7 +9,7 @@ export default () => html`
       method="POST"
       window.location.href="http://localhost:1234"
     >
-      <div>
+      <div class="contact">
         <label for="name" required>Name:</label>
         <input
           type="text"
@@ -19,7 +19,7 @@ export default () => html`
           required
         />
       </div>
-      <div>
+      <div class="contact">
         <label for="email" required>Email:</label>
         <input
           type="email"
@@ -29,12 +29,12 @@ export default () => html`
           required
         />
       </div>
-      <div>
+      <div class="contact">
         <label for="phone">Phone:</label>
         <input type="tel" name="phone" id="phone" placeholder="555-555-5555" />
       </div>
 
-      <div>
+      <div class="contact">
         <label for="msg" required>Enter your message:</label>
         <div>
           <textarea

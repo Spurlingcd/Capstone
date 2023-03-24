@@ -34,7 +34,7 @@ export default state => html`
           type="radio"
           value="frown"
           name="tracker"
-          onclick="window.location.href='/Fuds'"
+          onclick="location.href='/Fuds#scriptures'"
         />
         Not So Good
       </label>
@@ -42,7 +42,7 @@ export default state => html`
       <label
         ><input
           type="radio"
-          onclick="window.location.href='/Fuds'"
+          onclick="location.href='/Fuds#funnies'"
           value="meh"
           name="tracker"
         />
@@ -52,7 +52,7 @@ export default state => html`
       <label>
         <input
           type="radio"
-          onclick="window.location.href='/Fuds'"
+          onclick="location.href='/Fuds#affirmations'"
           value="fud"
           name="tracker"
         />
